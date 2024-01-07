@@ -41,7 +41,11 @@ class LoginVC: UIViewController {
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let apiResponse):
-                        // Handle successful response
+                        
+                        let StoryBoard = UIStoryboard(name: "HomeStoryBoard", bundle: nil)
+                        let Vc = StoryBoard.instantiateViewController(identifier: "HomeVC") as! HomeVC
+                        self.navigationController?.pushViewController(Vc, animated: true)
+                        
                         print("Received API response: \(apiResponse)")
                         // You can parse the apiResponse and handle accordingly
                     case .failure(let error):

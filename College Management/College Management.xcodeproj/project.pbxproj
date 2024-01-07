@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8415844B2B49AF680004C632 /* College Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415844A2B49AF680004C632 /* College Data.swift */; };
+		845284712B49EA9800AEE8A4 /* HomeStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845284702B49EA9800AEE8A4 /* HomeStoryBoard.storyboard */; };
+		845284752B49EB5100AEE8A4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845284742B49EB5100AEE8A4 /* HomeVC.swift */; };
+		8452847A2B49FCCD00AEE8A4 /* CourseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845284782B49FCCD00AEE8A4 /* CourseTVC.swift */; };
+		8452847B2B49FCCD00AEE8A4 /* CourseTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845284792B49FCCD00AEE8A4 /* CourseTVC.xib */; };
+		845284802B4A087E00AEE8A4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452847F2B4A087E00AEE8A4 /* File.swift */; };
+		845284832B4A0BC900AEE8A4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845284822B4A0BC900AEE8A4 /* Color+Extension.swift */; };
 		846E082D2B485E81008B080D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E082C2B485E81008B080D /* LoginVC.swift */; };
 		846E08302B485EAE008B080D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E082F2B485EAE008B080D /* SignUpVC.swift */; };
 		846E08332B485ED1008B080D /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E08322B485ED1008B080D /* OTPVC.swift */; };
@@ -21,6 +27,12 @@
 
 /* Begin PBXFileReference section */
 		8415844A2B49AF680004C632 /* College Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "College Data.swift"; sourceTree = "<group>"; };
+		845284702B49EA9800AEE8A4 /* HomeStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryBoard.storyboard; sourceTree = "<group>"; };
+		845284742B49EB5100AEE8A4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		845284782B49FCCD00AEE8A4 /* CourseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTVC.swift; sourceTree = "<group>"; };
+		845284792B49FCCD00AEE8A4 /* CourseTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseTVC.xib; sourceTree = "<group>"; };
+		8452847F2B4A087E00AEE8A4 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		845284822B4A0BC900AEE8A4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		846E082C2B485E81008B080D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		846E082F2B485EAE008B080D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		846E08322B485ED1008B080D /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
@@ -45,9 +57,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845284732B49EB3A00AEE8A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				845284742B49EB5100AEE8A4 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		845284772B49FCA600AEE8A4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				845284782B49FCCD00AEE8A4 /* CourseTVC.swift */,
+				845284792B49FCCD00AEE8A4 /* CourseTVC.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		8452847E2B4A086A00AEE8A4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8452847F2B4A087E00AEE8A4 /* File.swift */,
+				845284822B4A0BC900AEE8A4 /* Color+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		846E08282B485DED008B080D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				845284772B49FCA600AEE8A4 /* Xibs */,
+				845284732B49EB3A00AEE8A4 /* Home */,
 				846E082C2B485E81008B080D /* LoginVC.swift */,
 				846E082F2B485EAE008B080D /* SignUpVC.swift */,
 				846E08322B485ED1008B080D /* OTPVC.swift */,
@@ -67,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				84EA1B842B457D8000DE4DFB /* Main.storyboard */,
+				845284702B49EA9800AEE8A4 /* HomeStoryBoard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +141,7 @@
 			children = (
 				84EA1B7E2B457D8000DE4DFB /* AppDelegate.swift */,
 				84EA1B802B457D8000DE4DFB /* SceneDelegate.swift */,
+				8452847E2B4A086A00AEE8A4 /* Utilities */,
 				846E08292B485DF9008B080D /* Model */,
 				846E082A2B485E07008B080D /* View */,
 				846E08282B485DED008B080D /* Controller */,
@@ -170,6 +212,8 @@
 			files = (
 				84EA1B8B2B457D8100DE4DFB /* LaunchScreen.storyboard in Resources */,
 				84EA1B882B457D8100DE4DFB /* Assets.xcassets in Resources */,
+				845284712B49EA9800AEE8A4 /* HomeStoryBoard.storyboard in Resources */,
+				8452847B2B49FCCD00AEE8A4 /* CourseTVC.xib in Resources */,
 				84EA1B862B457D8000DE4DFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,11 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				846E08332B485ED1008B080D /* OTPVC.swift in Sources */,
+				8452847A2B49FCCD00AEE8A4 /* CourseTVC.swift in Sources */,
+				845284752B49EB5100AEE8A4 /* HomeVC.swift in Sources */,
 				846E08372B485F37008B080D /* NetworkManagerVC.swift in Sources */,
 				846E08302B485EAE008B080D /* SignUpVC.swift in Sources */,
+				845284802B4A087E00AEE8A4 /* File.swift in Sources */,
 				8415844B2B49AF680004C632 /* College Data.swift in Sources */,
 				84EA1B7F2B457D8000DE4DFB /* AppDelegate.swift in Sources */,
 				84EA1B812B457D8000DE4DFB /* SceneDelegate.swift in Sources */,
+				845284832B4A0BC900AEE8A4 /* Color+Extension.swift in Sources */,
 				846E082D2B485E81008B080D /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
